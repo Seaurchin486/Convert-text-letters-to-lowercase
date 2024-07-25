@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Lowercase Converter</title>
+</head>
+<body>
+    <h1>Convert Text to Lowercase</h1>
+    <textarea id="inputText" rows="10" cols="50"></textarea><br>
+    <button onclick="convertToLowerCase()">Convert to Lowercase</button>
+    <textarea id="outputText" rows="10" cols="50" readonly></textarea>
+
+    <script>
+        function convertToLowerCase() {
+            const inputText = document.getElementById('inputText').value;
+            const outputText = document.getElementById('outputText');
+            outputText.value = inputText.toLowerCase();
+        }
+    </script>
+</body>
+</html>
